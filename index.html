@@ -1,0 +1,125 @@
+import React from "react";
+
+export default function LandingPage() {
+  return (
+    <div className="font-sans text-gray-800">
+      {/* Navigation */}
+      <nav className="w-full bg-white shadow-sm">
+        <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+          <div className="text-2xl font-bold">BCK Capital</div>
+          <ul className="hidden md:flex space-x-8">
+            <li><a href="#home" className="hover:text-blue-600">Home</a></li>
+            <li><a href="#products" className="hover:text-blue-600">Products</a></li>
+            <li><a href="#about" className="hover:text-blue-600">About</a></li>
+            <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <header
+        id="home"
+        className="relative bg-cover bg-center h-screen"
+        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-4">Grow and Protect Your Crypto Assets</h1>
+          <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl">
+            Explore our specialized funds tailored for stablecoins and leading cryptocurrencies.
+          </p>
+          <a
+            href="#products"
+            className="px-8 py-3 bg-blue-600 text-white rounded-xl text-lg hover:bg-blue-700 transition"
+          >
+            Get Started
+          </a>
+        </div>
+      </header>
+
+      {/* Products Section */}
+      <section id="products" className="py-20 bg-gray-100 px-6">
+        <div className="max-w-6xl mx-auto text-center mb-12">
+          <h2 className="text-3xl font-bold">Our Funds</h2>
+          <p className="text-gray-600 mt-2">Two unique products designed to maximize yield and growth.</p>
+        </div>
+        <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2">
+          {/* Yield Fund Card */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition">
+            <h3 className="text-2xl font-semibold mb-4">Blockchain Yield Fund</h3>
+            <p className="text-gray-600 mb-6">
+              Active management of USDT/USDC in top DeFi protocols with full auditability and immediate liquidity via multi-signature security.
+            </p>
+            <ul className="text-gray-700 space-y-2 mb-6 text-left">
+              <li><strong>Structure:</strong> DAO LLC (Marshall Islands)</li>
+              <li><strong>Launch:</strong> March 26, 2025</li>
+              <li><strong>Minimum:</strong> 50,000 USDT/USDC</li>
+              <li><strong>Management Fee:</strong> 0%</li>
+              <li><strong>Performance Fee:</strong> 20% (pro rata daily)</li>
+            </ul>
+            <a href="#" className="inline-block px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+              Learn More
+            </a>
+          </div>
+
+          {/* Asset Fund Card */}
+          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition">
+            <h3 className="text-2xl font-semibold mb-4">Blockchain Asset Fund I</h3>
+            <p className="text-gray-600 mb-6">
+              Invest in leading cryptocurrencies (BTC, ETH) and DeFi strategies with systematic and active management for enhanced returns.
+            </p>
+            <ul className="text-gray-700 space-y-2 mb-6 text-left">
+              <li><strong>Structure:</strong> DAO LLC (Marshall Islands)</li>
+              <li><strong>Launch:</strong> March 12, 2025</li>
+              <li><strong>Minimum:</strong> 50,000 USDT/USDC</li>
+              <li><strong>Management Fee:</strong> 2%</li>
+              <li><strong>Performance Fee:</strong> 20% (High Water Mark)</li>
+            </ul>
+            <a href="#" className="inline-block px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4">Why BCK Capital?</h2>
+        <p className="text-gray-600">
+          We combine deep DeFi integration with institutional-grade security and transparency, empowering investors to access and grow their crypto holdings with confidence.
+        </p>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-white px-6">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
+          <p className="text-gray-600 mb-6">Questions? Reach out and our team will get back to you promptly.</p>
+          <form className="space-y-4">
+            <input
+              type="email"
+              placeholder="Your email"
+              className="w-full border rounded-lg px-4 py-2"
+            />
+            <textarea
+              placeholder="Your message"
+              rows={4}
+              className="w-full border rounded-lg px-4 py-2"
+            />
+            <button
+              type="submit"
+              className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 py-6 text-center text-gray-600">
+        © 2025 BCK Capital. All rights reserved.
+      </footer>
+    </div>
+  );
+}
