@@ -21,49 +21,38 @@
 </head>
 <body class="font-sans text-gray-800 bg-gray-50">
 
-  <!-- NAVBAR -->
+<!-- NAVBAR -->
 <nav class="w-full bg-white shadow-md fixed top-0 z-20">
   <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
-    
-    <!-- Logo -->
+
+    <!-- Logo (más grande y fondo transparente) -->
     <div class="flex-shrink-0">
       <a href="#home">
         <img
-          src="images/BCK_logo.png"
+          src="images/BCK_logo_transparent.png"
           alt="BCK Capital Logo"
-          class="h-8 md:h-10"
+          class="h-12 md:h-16 object-contain bg-transparent"
         />
       </a>
     </div>
 
-    <!-- Menú principal -->
+    <!-- Menú -->
     <ul class="hidden md:flex space-x-6 items-center">
-      <li><a href="#home" class="text-gray-700 hover:text-primary transition">Home</a></li>
-      <li><a href="#products" class="text-gray-700 hover:text-primary transition">Products</a></li>
-      <li><a href="#about" class="text-gray-700 hover:text-primary transition">About</a></li>
-      <li><a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a></li>
-      <li>
-        <a
-          href="https://app.blockchaincap.fund/"
-          target="_blank"
-          class="px-4 py-2 bg-primary text-white rounded-lg shadow hover:bg-blue-700 transition"
-        >
-          Login
-        </a>
-      </li>
+      <!-- … enlaces … -->
     </ul>
 
     <!-- Botón móvil -->
     <div class="md:hidden">
       <button id="menu-btn" aria-label="Open menu">
-        <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        <!-- svg hamburguesa -->
       </button>
     </div>
+
   </div>
 </nav>
 
+
+   
 
   <!-- HERO -->
   <header id="home" class="relative bg-cover bg-center h-[80vh]" style="background-image: url('images/9067304.jpg')">
