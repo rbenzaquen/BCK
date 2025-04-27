@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BCK Capital</title>
-  <!-- Tailwind via CDN -->
+  <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Opcional: personalizar tu config de Tailwind -->
   <script>
     tailwind.config = {
       theme: {
@@ -21,15 +20,25 @@
   </script>
 </head>
 <body class="font-sans text-gray-800">
+
   <!-- NAVBAR -->
   <nav class="w-full bg-white shadow-sm">
     <div class="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
       <div class="text-2xl font-bold">BCK Capital</div>
-      <ul class="hidden md:flex space-x-8">
+      <ul class="hidden md:flex space-x-8 items-center">
         <li><a href="#home" class="hover:text-primary">Home</a></li>
         <li><a href="#products" class="hover:text-primary">Products</a></li>
         <li><a href="#about" class="hover:text-primary">About</a></li>
         <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+        <li>
+          <a
+            href="https://app.blockchaincap.fund/"
+            target="_blank"
+            class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 transition"
+          >
+            Login
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -120,5 +129,6 @@
   <footer class="bg-gray-100 py-6 text-center text-gray-600">
     © 2025 BCK Capital. All rights reserved.
   </footer>
+
 </body>
 </html>
